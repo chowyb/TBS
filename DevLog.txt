@@ -1,0 +1,11 @@
+14 May 2014: 2000hrs - 2130 hrs
+Implemented basic game map, with
+horizontal walls and vertical walls classes
+Calculations for remaining action points left
+implemented, via recursion
+
+14 May 2014: 2330 hrs - 2359 hrs
+Implemented basic file reading for map
+
+15 May 2014: 1230 hrs - 1300 hrs
+Implemented "under-the-hood" character movement

@@ -1,0 +1,7 @@
+public class GameCharacter {
+  int currRow, currCol;
+  int actionPoints;
+  
+  public void moveTo(int destRow, int destCol) {
+  }
+}
