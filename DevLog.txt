@@ -15,3 +15,6 @@ Implemented synchronisation of walls and map values
 
 21 May 2014: 2330 hrs - 2359 hrs
 Partially rewritten file reading to use URL
+
+22 May 2014: 1300 hrs - 1500 hrs
+Additional exploration with drawing of images
