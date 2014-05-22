@@ -10,7 +10,7 @@ public class GameApplet extends Applet {
   
   public void init() {
     try {
-      map = LoadMap.load(new URL(getCodeBase(), "maps/map01.txt"));
+      map = LoadMap.load(new URL(getCodeBase(), "maps/map02.txt"));
     }
     catch (Exception e) {
     }
