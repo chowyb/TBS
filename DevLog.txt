@@ -18,3 +18,7 @@ Partially rewritten file reading to use URL
 
 22 May 2014: 1300 hrs - 1500 hrs
 Additional exploration with drawing of images
+
+22 May 2014: 1700 hrs - 1800 hrs
+Experimenting with git: attempt to merge master and
+gh-pages to properly load applet onto webpage
