@@ -22,3 +22,9 @@ Additional exploration with drawing of images
 22 May 2014: 1700 hrs - 1800 hrs
 Experimenting with git: attempt to merge master and
 gh-pages to properly load applet onto webpage
+
+22 May 2014: 2200 hrs - 2230 hrs
+Synchronised gh-pages and master on git
+
+22 May 2014: 2230 hrs - 2359 hrs
+Research on drawing multiple images within an applet
