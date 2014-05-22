@@ -39,6 +39,9 @@ public class LoadMap {
         }
       }
     }
+    
+    map.setOuterWalls();
+    
     try {
       is.close();
     }

@@ -36,7 +36,7 @@ public class GameApplet extends Applet {
     int i, j;
     for (i = 0; i < imgArr.length; i++) {
       for (j = 0; j < imgArr[0].length; j++) {
-        g.drawImage(imgArr[i][j], i * 50, j * 50, this);
+        g.drawImage(imgArr[i][j], j * 50, i * 50, this);
       }
     }
   }

@@ -1,14 +1,17 @@
 import java.util.*;
 import java.io.*;
+import java.net.*;
 
 public class LoadMap {
-  public static GameMap load(String mapName) {
+  public static GameMap load(URL fileLocation) {
+    InputStream is = null;
     Scanner sc;
     try {
-      sc = new Scanner(new FileReader(mapName));
+      is = fileLocation.openStream();
+      sc = new Scanner(is);
     }
-    catch (FileNotFoundException obj) {
-      System.out.println("Map " + mapName + " not found");
+    catch (Exception obj) {
+      System.out.println("Exception - Failed to access URL");
       return null;
     }
     // getting size of map
@@ -35,6 +38,12 @@ public class LoadMap {
           map.setVertWall(i, j, true);
         }
       }
+    }
+    try {
+      is.close();
+    }
+    catch (Exception obj) {
+      System.out.println("Exception - Failed to close stream");
     }
     return map;
   }

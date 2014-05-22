@@ -19,6 +19,19 @@ public class GameMap {
     return map[row][col];
   }
   
+  // mutator - sets outer walls to appear
+  public void setOuterWalls() {
+    int i;
+    for (i = 0; i < cols; i++) {
+      map[0][i] += 8;
+      map[rows - 1][i] += 1;
+    }
+    for (i = 0; i < rows; i++) {
+      map[i][0] += 4;
+      map[i][cols - 1] += 2;
+    }
+  }
+  
   // mutator - changes a single horizontal wall
   // and updates the map accordingly
   public void setHoriWall(int row, int col, boolean hasWall) {
