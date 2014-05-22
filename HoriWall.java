@@ -11,7 +11,7 @@ public class HoriWall {
   // returns 1 if index is out of bounds
   public boolean hasWall(int row, int col) {
     if (row < 0 || row >= walls.length || col < 0 || col >= walls[0].length) {
-      return 1;
+      return true;
     }
     return walls[row][col];
   }

@@ -9,3 +9,9 @@ Implemented basic file reading for map
 
 15 May 2014: 1230 hrs - 1300 hrs
 Implemented "under-the-hood" character movement
+
+21 May 2014: 2200 hrs - 2330 hrs
+Implemented synchronisation of walls and map values
+
+21 May 2014: 2330 hrs - 2359 hrs
+Partially rewritten file reading to use URL

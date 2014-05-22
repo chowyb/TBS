@@ -11,8 +11,8 @@ public class GameCharacter {
     if (actionPointsMap[destRow][destCol] < 0) {
       return;
     }
-    String moveOrder = moveToRecur(destRow, destCol, map, actionPointsMap);
-    moveExecute(moveOrder, map);
+    //String moveOrder = moveToRecur(destRow, destCol, map, actionPointsMap);
+    //moveExecute(moveOrder, map);
   }
   
   private void moveExecute(String moveOrder, GameMap map) {

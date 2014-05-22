@@ -14,6 +14,11 @@ public class GameMap {
     map = new int[rows][cols];
   }
   
+  // accessor - gets the value of a cell in the map
+  public int getCell(int row, int col) {
+    return map[row][col];
+  }
+  
   // mutator - changes a single horizontal wall
   // and updates the map accordingly
   public void setHoriWall(int row, int col, boolean hasWall) {
