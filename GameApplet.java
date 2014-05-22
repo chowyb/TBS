@@ -6,8 +6,7 @@ import javax.imageio.*;
 
 public class GameApplet extends Applet {
   GameMap map;
-  int i, j;
-  Image img;
+  Image[][] imgArr;
   
   public void init() {
     try {
@@ -15,6 +14,7 @@ public class GameApplet extends Applet {
     }
     catch (Exception e) {
     }
+    int i, j;
     for (i = 0; i < map.getRows(); i++) {
       for (j = 0; j < map.getCols(); j++) {
         Integer value = map.getCell(i, j);
@@ -23,8 +23,7 @@ public class GameApplet extends Applet {
           imageName = "0" + imageName;
         }
         try {
-          img = getImage(getCodeBase(), "images/" + imageName + ".png");
-          repaint();
+          imgArr[i][j] = getImage(getCodeBase(), "images/" + imageName + ".png");
         }
         catch (Exception e) {
         }
@@ -33,7 +32,12 @@ public class GameApplet extends Applet {
   }
   
   public void paint(Graphics g) {
-    g.drawImage(img, i * 50, j * 50, this);
+    int i, j;
+    for (i = 0; i < imgArr.length; i++) {
+      for (j = 0; j < imgArr[0].length; j++) {
+        g.drawImage(imgArr[i][j], i * 50, j * 50, this);
+      }
+    }
   }
 }
     
