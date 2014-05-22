@@ -15,6 +15,7 @@ public class GameApplet extends Applet {
     catch (Exception e) {
     }
     int i, j;
+    imgArr = new Image[map.getRows()][map.getCols()];
     for (i = 0; i < map.getRows(); i++) {
       for (j = 0; j < map.getCols(); j++) {
         Integer value = map.getCell(i, j);
