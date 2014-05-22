@@ -55,16 +55,16 @@ public class GameMap {
   public void setVertWall(int row, int col, boolean hasWall) {
     vertical.setWall(row, col, hasWall);
     if (map[row][col] % 4 >= 2 && !hasWall) {
-      map[row][col] -= 4;
+      map[row][col] -= 2;
     }
     else if (map[row][col] % 4 < 2 && hasWall) {
-      map[row][col] += 4;
+      map[row][col] += 2;
     }
     if (map[row][col + 1] % 8 >= 4 && !hasWall) {
-      map[row][col + 1] -= 2;
+      map[row][col + 1] -= 4;
     }
     else if (map[row][col + 1] % 8 < 4 && hasWall) {
-      map[row][col + 1] += 2;
+      map[row][col + 1] += 4;
     }
   }
   
