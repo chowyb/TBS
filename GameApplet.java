@@ -1,10 +1,11 @@
 import java.applet.*;
 import java.awt.*;
+import java.awt.event.*;
 import java.net.*;
 import java.awt.image.*;
 import javax.imageio.*;
 
-public class GameApplet extends Applet {
+public class GameApplet extends Applet implements MouseListener {
   GameMap map;
   Image[][] imgArr;
   
@@ -40,6 +41,29 @@ public class GameApplet extends Applet {
       }
     }
     g.drawImage(getImage(getCodeBase(), "images/0016.png"), 400, 0, this);
+  }
+  
+  public void mouseClicked(MouseEvent e) {
+  }
+  
+  public void mousePressed(MouseEvent e) {
+    int xPos = e.getX();
+    int yPos = e.getY();
+    int row = xPos / 50;
+    int col = yPos / 50;
+    if (row < imgArr.length || col < imgArr[0].length) {
+      imgArr[row][col] = getImage(getCodeBase(), "images/0000.png");
+    }
+    repaint();
+  }
+  
+  public void mouseReleased(MouseEvent e) {
+  }
+  
+  public void mouseEntered(MouseEvent e) {
+  }
+  
+  public void mouseExited(MouseEvent e) {
   }
 }
     
