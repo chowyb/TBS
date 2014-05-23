@@ -39,6 +39,7 @@ public class GameApplet extends Applet {
         g.drawImage(imgArr[i][j], j * 50, i * 50, this);
       }
     }
+    g.drawImage(getImage(getCodeBase(), "images/0016.png"), 400, 0, this);
   }
 }
     

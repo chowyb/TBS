@@ -28,3 +28,9 @@ Synchronised gh-pages and master on git
 
 22 May 2014: 2230 hrs - 2359 hrs
 Research on drawing multiple images within an applet
+
+23 May 2014: 0000 hrs - 0100 hrs
+Drawing multiple images implemented
+
+23 May 2014: 1300 hrs - 1400 hrs
+Research on tracking mouse clicks
